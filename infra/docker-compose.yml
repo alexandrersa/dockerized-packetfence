@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  packetfence:
+    hostname: "packetfence"
+    build: 
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: "packetfence"
+    ports:
+      - "1443:1443"
